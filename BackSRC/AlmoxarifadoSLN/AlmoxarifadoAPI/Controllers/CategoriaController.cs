@@ -38,5 +38,11 @@ namespace AlmoxarifadoAPI.Controllers
         {
             return Ok(_categorias.Where(x => x.Codigo==id));
         }
+
+        [HttpGet(Name = "listatodos")]
+        public ActionResult<Categoria> GetCategoriasTodos()
+        {
+            return Ok(_categorias);
+        }
     }
 }
