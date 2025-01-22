@@ -22,7 +22,7 @@ namespace AlmoxarifadoAPI.Controllers
                {
                    Codigo = 2,
                    Descricao ="Bebidas"
-               }          
+               }
             };
 
         }
@@ -33,7 +33,7 @@ namespace AlmoxarifadoAPI.Controllers
             return Ok(_categorias);
         }
 
-        [HttpPost(Name = "categoria")]
+        [HttpGet("{id:int}", Name ="Categoria")]
         public ActionResult<Categoria> GetCategoria(int id)
         {
             return Ok(_categorias.Where(x => x.Codigo==id));
