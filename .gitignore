@@ -1,4 +1,3 @@
-
 BackSRC/AlmoxarifadoSLN/.vs
 BackSRC/AlmoxarifadoSLN/AlmoxarifadoAPI\bin/
 BackSRC/AlmoxarifadoSLN/AlmoxarifadoAPI/obj/
@@ -6,5 +5,3 @@ BackSRC/AlmoxarifadoSLN/AlmoxarifadoAPI/obj/
 *.csproj
 *.dll
 *.cache
-BackSRC/AlmoxarifadoBackSLN/AlmoxarifadoBackAPI/obj/Debug/net7.0/AlmoxarifadoBackAPI.AssemblyInfo.cs
-BackSRC/AlmoxarifadoBackSLN/AlmoxarifadoBackAPI/obj/Debug/net7.0/AlmoxarifadoBackAPI.AssemblyInfoInputs.cache
