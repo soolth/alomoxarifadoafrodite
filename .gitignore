@@ -1,16 +1,8 @@
 
-/BackSRC/AlmoxarifadoSLN/.vs
-/BackSRC/AlmoxarifadoSLN/AlmoxarifadoAPI/bin
-/BackSRC/AlmoxarifadoSLN/AlmoxarifadoAPI/obj
+BackSRC/AlmoxarifadoSLN/.vs
+BackSRC/AlmoxarifadoSLN/AlmoxarifadoAPI/bin
+BackSRC/AlmoxarifadoSLN/AlmoxarifadoAPI/obj
 *.user
 *.csproj
-/BackSRC/AlmoxarifadoBackSLN/AlmoxarifadoBackAPI/bin
-/BackSRC/AlmoxarifadoBackSLN/AlmoxarifadoBackAPI/obj/Debug
-/BackSRC/AlmoxarifadoBackSLN/AlmoxarifadoBackAPI/obj
-/BackSRC/AlmoxarifadoBackSLN/AlmoxarifadoBackAPI/bin
-/BackSRC/AlmoxarifadoBackSLN/AlmoxarifadoBackAPI/bin/Debug/net7.0
-/BackSRC/AlmoxarifadoBackSLN/AlmoxarifadoBackAPI/obj
-*.vsidx
-*.vsidx
-/BackSRC/AlmoxarifadoBackSLN/.vs/AlmoxarifadoBackSLN/v17
-/BackSRC/AlmoxarifadoBackSLN/AlmoxarifadoBackAPI/bin
+
+
