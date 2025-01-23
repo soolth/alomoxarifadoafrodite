@@ -1,8 +1,10 @@
 
 BackSRC/AlmoxarifadoSLN/.vs
-BackSRC/AlmoxarifadoSLN/AlmoxarifadoAPI/bin
-BackSRC/AlmoxarifadoSLN/AlmoxarifadoAPI/obj
+BackSRC/AlmoxarifadoSLN/AlmoxarifadoAPI\bin/
+BackSRC/AlmoxarifadoSLN/AlmoxarifadoAPI/obj/
 *.user
 *.csproj
 
 
+*.dll
+*.cache
