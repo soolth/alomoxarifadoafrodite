@@ -4,8 +4,6 @@ BackSRC/AlmoxarifadoSLN/AlmoxarifadoAPI\bin/
 BackSRC/AlmoxarifadoSLN/AlmoxarifadoAPI/obj/
 *.user
 *.csproj
-
-
 *.dll
 *.cache
 BackSRC/AlmoxarifadoBackSLN/AlmoxarifadoBackAPI/obj/Debug/net7.0/AlmoxarifadoBackAPI.AssemblyInfo.cs
