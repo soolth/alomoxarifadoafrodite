@@ -8,3 +8,5 @@ BackSRC/AlmoxarifadoSLN/AlmoxarifadoAPI/obj/
 
 *.dll
 *.cache
+BackSRC/AlmoxarifadoBackSLN/AlmoxarifadoBackAPI/obj/Debug/net7.0/AlmoxarifadoBackAPI.AssemblyInfo.cs
+BackSRC/AlmoxarifadoBackSLN/AlmoxarifadoBackAPI/obj/Debug/net7.0/AlmoxarifadoBackAPI.AssemblyInfoInputs.cache
