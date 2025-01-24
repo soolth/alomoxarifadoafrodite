@@ -1,5 +1,6 @@
 ﻿using AlmoxarifadoBackAPI.DTO;
 using AlmoxarifadoBackAPI.Models;
+using AlmoxarifadoBackAPI.Repositorio;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,9 +11,10 @@ namespace AlmoxarifadoBackAPI.Controllers
     public class CategoriaController : ControllerBase
     {
         private readonly List<Categoria> _categorias;
-
-        public CategoriaController()
+        private readonly CategoriaRepositorio _db;
+        public CategoriaController(CategoriaRepositorio db)
         {
+            _db = db;
             _categorias = new List<Categoria>()
             {
                 new Categoria()
@@ -31,7 +33,7 @@ namespace AlmoxarifadoBackAPI.Controllers
         [HttpGet("/lista")]
         public IActionResult listaCategorias()
         {
-            return Ok(_categorias);
+            return Ok(_db.GetAll());
         }
 
         [HttpPost("/categoria")]
@@ -41,15 +43,15 @@ namespace AlmoxarifadoBackAPI.Controllers
         }
 
         [HttpPost("/criarcategoria")]
-        public IActionResult criarCategoria(Categoria categoria)
+        public IActionResult criarCategoria(CategoriaCadastroDTO categoria)
         {
 
             var novaCategoria = new Categoria()
-            {
-                Codigo = categoria.Codigo,
+            {               
                 Descricao = categoria.Descricao
             };
-            _categorias.Add(novaCategoria);
+            //_categorias.Add(novaCategoria);
+            _db.Add(novaCategoria);
             return Ok("Cadastro com Sucesso");
         }
 

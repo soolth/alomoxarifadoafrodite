@@ -25,7 +25,7 @@
     "Parameters": [
       {
         "Name": "categoria",
-        "Type": "AlmoxarifadoBackAPI.Models.Categoria",
+        "Type": "AlmoxarifadoBackAPI.DTO.CategoriaCadastroDTO",
         "IsRequired": true
       }
     ],
