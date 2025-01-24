@@ -38,8 +38,7 @@
               "RelativeToolTip": "AlmoxarifadoBackAPI\\Program.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-23T14:11:48.436Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-23T14:11:48.436Z"
             },
             {
               "$type": "Document",
@@ -49,7 +48,7 @@
               "RelativeDocumentMoniker": "AlmoxarifadoBackAPI\\DTO\\CategoriaDTO.cs",
               "ToolTip": "C:\\Users\\professor.cetafest\\Documents\\GitHub\\alomoxarifadoafrodite\\BackSRC\\AlmoxarifadoBackSLN\\AlmoxarifadoBackAPI\\DTO\\CategoriaDTO.cs",
               "RelativeToolTip": "AlmoxarifadoBackAPI\\DTO\\CategoriaDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-23T14:03:55.499Z",
               "EditorCaption": ""
@@ -62,7 +61,7 @@
               "RelativeDocumentMoniker": "AlmoxarifadoBackAPI\\Controllers\\CategoriaController.cs",
               "ToolTip": "C:\\Users\\professor.cetafest\\Documents\\GitHub\\alomoxarifadoafrodite\\BackSRC\\AlmoxarifadoBackSLN\\AlmoxarifadoBackAPI\\Controllers\\CategoriaController.cs",
               "RelativeToolTip": "AlmoxarifadoBackAPI\\Controllers\\CategoriaController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAiwCAAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAA8wCoAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-23T13:52:21.182Z",
               "EditorCaption": ""
@@ -77,8 +76,7 @@
               "RelativeToolTip": "AlmoxarifadoBackAPI\\Models\\Categoria.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-23T13:46:36.279Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-23T13:46:36.279Z"
             }
           ]
         }

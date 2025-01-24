@@ -39,5 +39,39 @@ namespace AlmoxarifadoBackAPI.Controllers
         {
             return Ok(_categorias.Where(x=>x.Codigo==categoria.Codigo));
         }
-    }   
+
+        [HttpPost("/criarcategoria")]
+        public IActionResult criarCategoria(Categoria categoria)
+        {
+
+            var novaCategoria = new Categoria()
+            {
+                Codigo = categoria.Codigo,
+                Descricao = categoria.Descricao
+            };
+            _categorias.Add(novaCategoria);
+            return Ok("Cadastro com Sucesso");
+        }
+
+        [HttpDelete("/removercategoria")]
+        public IActionResult removerCategorias(CategoriaDTO categoria)
+        {
+            var itemPesquisado = _categorias.FirstOrDefault(x => x.Codigo == categoria.Codigo);
+
+            if (itemPesquisado != null)
+            {
+                _categorias.Remove(itemPesquisado);
+                return Ok("Removido com sucesso");
+            }
+            else
+            {
+                return Ok("Produdo não localizado");
+            }
+
+            
+        }
+
+
+
+    }
 }

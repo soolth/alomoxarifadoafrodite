@@ -48,6 +48,68 @@
         }
       }
     },
+    "/criarcategoria": {
+      "post": {
+        "tags": [
+          "Categoria"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Categoria"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Categoria"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Categoria"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/removercategoria": {
+      "delete": {
+        "tags": [
+          "Categoria"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CategoriaDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CategoriaDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CategoriaDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/WeatherForecast": {
       "get": {
         "tags": [
@@ -90,6 +152,20 @@
   },
   "components": {
     "schemas": {
+      "Categoria": {
+        "type": "object",
+        "properties": {
+          "codigo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "descricao": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "CategoriaDTO": {
         "type": "object",
         "properties": {
