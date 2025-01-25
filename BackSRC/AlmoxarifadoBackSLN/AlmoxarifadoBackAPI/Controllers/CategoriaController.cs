@@ -11,8 +11,8 @@ namespace AlmoxarifadoBackAPI.Controllers
     public class CategoriaController : ControllerBase
     {
         private readonly List<Categoria> _categorias;
-        private readonly CategoriaRepositorio _db;
-        public CategoriaController(CategoriaRepositorio db)
+        private readonly ICategoriaRepositorio _db;
+        public CategoriaController(ICategoriaRepositorio db)
         {
             _db = db;
             _categorias = new List<Categoria>()

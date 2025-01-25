@@ -57,17 +57,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Categoria"
+                "$ref": "#/components/schemas/CategoriaCadastroDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Categoria"
+                "$ref": "#/components/schemas/CategoriaCadastroDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Categoria"
+                "$ref": "#/components/schemas/CategoriaCadastroDTO"
               }
             }
           }
@@ -152,13 +152,9 @@
   },
   "components": {
     "schemas": {
-      "Categoria": {
+      "CategoriaCadastroDTO": {
         "type": "object",
         "properties": {
-          "codigo": {
-            "type": "integer",
-            "format": "int32"
-          },
           "descricao": {
             "type": "string",
             "nullable": true
