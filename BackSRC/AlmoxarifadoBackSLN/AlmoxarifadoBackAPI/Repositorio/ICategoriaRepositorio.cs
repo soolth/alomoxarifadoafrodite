@@ -7,5 +7,7 @@ namespace AlmoxarifadoBackAPI.Repositorio
         void Add(Categoria categoria);
 
         List<Categoria> GetAll();
+
+        
     }
 }

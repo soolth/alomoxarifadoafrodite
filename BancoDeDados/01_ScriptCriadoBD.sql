@@ -4,12 +4,13 @@ CREATE DATABASE dbAlmoxarifado
 GO
 USE dbAlmoxarifado
 GO
-
 ---Categoria
 CREATE TABLE CATEGORIA (
   Codigo int identity(1,1) primary key,
   Descricao varchar(100) not null
 )
+
+
 GO
 CREATE TABLE PRODUTO(
   Codigo int identity(1,1) primary key,
@@ -20,6 +21,7 @@ CREATE TABLE PRODUTO(
   CodigoCategoria int not null
 )
 go
-
 ALTER TABLE PRODUTO
 ADD FOREIGN KEY  (CodigoCategoria) REFERENCES CATEGORIA(Codigo);
+go
+--SELECT * FROM CATEGORIA

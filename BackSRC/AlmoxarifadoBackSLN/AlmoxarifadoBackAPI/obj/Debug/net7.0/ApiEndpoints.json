@@ -42,22 +42,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "AlmoxarifadoBackAPI.Controllers.CategoriaController",
-    "Method": "removerCategorias",
-    "RelativePath": "removercategoria",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "categoria",
-        "Type": "AlmoxarifadoBackAPI.DTO.CategoriaDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "AlmoxarifadoBackAPI.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

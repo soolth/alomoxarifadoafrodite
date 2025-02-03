@@ -10,24 +10,11 @@ namespace AlmoxarifadoBackAPI.Controllers
     [ApiController]
     public class CategoriaController : ControllerBase
     {
-        private readonly List<Categoria> _categorias;
         private readonly ICategoriaRepositorio _db;
         public CategoriaController(ICategoriaRepositorio db)
         {
-            _db = db;
-            _categorias = new List<Categoria>()
-            {
-                new Categoria()
-                {
-                    Codigo = 1,
-                    Descricao ="Bebidas"
-                },
-                new Categoria()
-                {
-                    Codigo = 2,
-                    Descricao ="Alimento"
-                }
-            };
+            _db =db;
+      
         }
 
         [HttpGet("/lista")]
@@ -39,7 +26,7 @@ namespace AlmoxarifadoBackAPI.Controllers
         [HttpPost("/categoria")]
         public IActionResult listaCategorias(CategoriaDTO categoria)
         {
-            return Ok(_categorias.Where(x=>x.Codigo==categoria.Codigo));
+            return Ok(_db.GetAll().Where(x=>x.Codigo==categoria.Codigo));
         }
 
         [HttpPost("/criarcategoria")]
@@ -55,23 +42,23 @@ namespace AlmoxarifadoBackAPI.Controllers
             return Ok("Cadastro com Sucesso");
         }
 
-        [HttpDelete("/removercategoria")]
-        public IActionResult removerCategorias(CategoriaDTO categoria)
-        {
-            var itemPesquisado = _categorias.FirstOrDefault(x => x.Codigo == categoria.Codigo);
+        //[HttpDelete("/removercategoria")]
+        //public IActionResult removerCategorias(CategoriaDTO categoria)
+        //{
+        //    var itemPesquisado = _categorias.FirstOrDefault(x => x.Codigo == categoria.Codigo);
 
-            if (itemPesquisado != null)
-            {
-                _categorias.Remove(itemPesquisado);
-                return Ok("Removido com sucesso");
-            }
-            else
-            {
-                return Ok("Produdo não localizado");
-            }
+        //    if (itemPesquisado != null)
+        //    {
+        //        _categorias.Remove(itemPesquisado);
+        //        return Ok("Removido com sucesso");
+        //    }
+        //    else
+        //    {
+        //        return Ok("Produdo não localizado");
+        //    }
 
             
-        }
+        //}
 
 
 
