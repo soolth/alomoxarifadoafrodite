@@ -1,4 +1,8 @@
 using AlmoxarifadoBackAPI.Repositorio;
+using AlmoxarifadoBackAPI.Repositorio_pro;
+using AlmoxarifadoBackAPI.Repositorio_For;
+using AlmoxarifadoBackAPI.Repositorio_Ent;
+using AlmoxarifadoBackAPI.Repositorio_sai;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,6 +19,18 @@ builder.Services.AddDbContext<Context>(options =>
 //builder.Services.AddScoped<CategoriaRepositorio>();
 builder.Services.AddScoped<ICategoriaRepositorio, CategoriaRepositorio>();
 
+builder.Services.AddDbContext<Context1>(options =>
+        options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
+builder.Services.AddScoped<IProdutoRepositorio, ProdutoRepositorio>();
+builder.Services.AddDbContext<Context2>(options =>
+        options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
+builder.Services.AddScoped<IFornecedorRepositorio, FornecedorRepositorio>();
+builder.Services.AddDbContext<Context3>(options =>
+        options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
+builder.Services.AddScoped<IEntradaRepositorio, EntradaRepositorio>();
+builder.Services.AddDbContext<Context4>(options =>
+        options.UseSqlServer(builder.Configuration.GetConnectionString("Default")));
+builder.Services.AddScoped<ISaidaRepositorio, SaidaRepositorio>();
 
 var app = builder.Build();
 
