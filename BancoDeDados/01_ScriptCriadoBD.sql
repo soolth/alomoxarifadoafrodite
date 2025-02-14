@@ -14,6 +14,9 @@ INSERT CATEGORIA (Descricao)  VALUES ('Alimentos')
 INSERT CATEGORIA (Descricao)  VALUES ('Eletrônicos')
 SELECT*FROM CATEGORIA
 GO
+
+
+
 CREATE TABLE PRODUTO(
   Codigo int identity(1,1) primary key,
   Descricao varchar(100) not null,
@@ -28,11 +31,14 @@ INSERT INTO PRODUTO ([Descricao],[UnidadeMedida],[EstoqueAtual],[Epermanente],[C
              VALUES ('Biscoito','Pacote', 15, 0,1)        
 GO
 SELECT*FROM PRODUTO
+
+
+
 go
 ALTER TABLE PRODUTO
 ADD FOREIGN KEY  (CodigoCategoria) REFERENCES CATEGORIA(Codigo);
 go
-SELECT * FROM CATEGORIA
+SELECT * FROM PRODUTO
 
 CREATE TABLE FORNECEDOR(
   Codigo int identity(1,1) primary key,
@@ -61,15 +67,15 @@ INSERT INTO ENTRADA([Descricao], [DATAENTRADA],[QUANTIDADEATUAL])
 		SELECT*FROM ENTRADA
 
 		CREATE TABLE SECRETARIA1(
-		codigo int identity(1,1) primary key,
-		Descricao varchar(100),
+   codigo int identity(1,1) primary key,
+  Descricao varchar(100),
   Nome varchar(100),
   Telefone varchar(12) not null,
   Estado varchar(100) ,
   Cidade varchar(100)  ,
   CNPJ varchar(100)  
 		)
-		INSERT INTO SECRETARIA1([Descricao] ,[Nome], [Telefone], [Estado], [Cidade], [CNPJ])
+		INSERT INTO SECRETARIA1(Descricao ,[Nome], [Telefone], [Estado], [Cidade], [CNPJ])
 		values ('Alimentos','SECRETARIA ESTANCIA', '(79)99564321', 'Sergipe', 'Estancia','00906704532')
 
 		
