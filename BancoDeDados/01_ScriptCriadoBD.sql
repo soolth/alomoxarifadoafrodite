@@ -1,8 +1,8 @@
 --DROP DATABASE dbAlmoxarifado
 GO
-create DATABASE dbAlmoxarifado11
+create DATABASE dbAlmoxarifado2
 GO
-USE dbAlmoxarifado11
+USE dbAlmoxarifado2
 GO
 ---Categoria
 CREATE TABLE CATEGORIA (
@@ -66,7 +66,7 @@ INSERT INTO ENTRADA([Descricao], [DATAENTRADA],[QUANTIDADEATUAL])
 		
 		SELECT*FROM ENTRADA
 
-		CREATE TABLE SECRETARIA1(
+		CREATE TABLE SECRETARIA(
    codigo int identity(1,1) primary key,
   Descricao varchar(100),
   Nome varchar(100),
@@ -75,14 +75,14 @@ INSERT INTO ENTRADA([Descricao], [DATAENTRADA],[QUANTIDADEATUAL])
   Cidade varchar(100)  ,
   CNPJ varchar(100)  
 		)
-		INSERT INTO SECRETARIA1(Descricao ,[Nome], [Telefone], [Estado], [Cidade], [CNPJ])
+		INSERT INTO SECRETARIA(Descricao ,[Nome], [Telefone], [Estado], [Cidade], [CNPJ])
 		values ('Alimentos','SECRETARIA ESTANCIA', '(79)99564321', 'Sergipe', 'Estancia','00906704532')
 
 		
-		INSERT INTO SECRETARIA1([Descricao], [Nome], [Telefone], [Estado], [Cidade], [CNPJ])
+		INSERT INTO SECRETARIA([Descricao], [Nome], [Telefone], [Estado], [Cidade], [CNPJ])
 		values ('Eletronicos','SeCRETARIA ARACAJU', '(79)95564671', 'Sergipe', 'Aracaju','01906704295')
 		
-		SELECT*FROM SECRETARIA1
+		SELECT*FROM SECRETARIA
 
 		CREATE TABLE ITEMENTRADA(
 		Codigo int identity(1,1) primary key,

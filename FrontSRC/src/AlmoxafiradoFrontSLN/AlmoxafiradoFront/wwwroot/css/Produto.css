@@ -1,0 +1,78 @@
+﻿bodyProduto {
+    font-family: Arial, sans-serif;
+    padding: 200px;
+}
+
+.form-containerProduto {
+    margin: auto;
+}
+
+    .form-containerProduto h2Produto {
+        text-align: center;
+        margin-bottom: 20vh;
+    }
+
+    .form-containerProduto labelProduto {
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .form-containerProduto inputProduto {
+        width: 100%;
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .form-containerProduto .button-containerProduto {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .form-containerProduto buttonProduto {
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .form-containerProduto .voltarProduto {
+        background-color: #007bff;
+        color: white;
+    }
+
+    .form-containerProduto .cancelarProduto {
+        background-color: #dc3545;
+        color: white;
+    }
+
+    .form-containerProduto .salvarProduto {
+        background-color: #007bff;
+        color: white;
+    }
+
+.codigocoProduto:hover {
+    background-color: rgb(122, 207, 122);
+    color: #ffffff;
+}
+
+.unidadeProduto:hover {
+    background-color: rgb(122, 207, 122);
+    color: #ffffff;
+}
+
+.descricaoProduto:hover {
+    background-color: rgb(122, 207, 122);
+    color: #ffffff;
+}
+
+.Epermanete:hover {
+    background-color: rgb(122, 207, 122);
+    color: #ffffff;
+}
+.CodigoCategoria:hover {
+    background-color: rgb(122, 207, 122);
+    color: #ffffff;
+}

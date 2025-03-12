@@ -41,7 +41,7 @@
     font-weight: bolder;
 }
 
-.BtnAzulColorCatogeria {
+.BtnAzulColorCategoria {
     background-color: cyan !important;
 }
 
@@ -51,7 +51,7 @@
     font-weight: 800;
 }
 
-.TableContainerCateogira {
+.TableContainerCategoria {
     width: 100%;
     font-size: 15pt !important;
 }
@@ -60,26 +60,43 @@
     border: 1px solid black;
 }
 
-.tdCatoria {
+.tdCategoria {
     background-color: white;
     color: black;
 }
 
 .Icone1Categoria {
-    background-color: red;
-    width: 50px;
-    height: 50px;
+    background-color: white;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
 }
-
-.Icone2Catogira {
-    background-color: yellow;
-    width: 50px;
-    height: 50px;
+.trash-btn{
+    background-color:#ffff;
+    border-color:white;
+}
+.trash-btn:hover  {
+    background-color: #b6ff00;
+}
+fas fa-edit{
+    background-color: black;
+}
+.Icone2Categoria {
+    background-color: white;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
 }
+.edit-button {
+    background-color: #ffff;
+    border-color: white;
+}
 
-.IconesContainerCatogeria {
+    .edit-button:hover {
+        background-color: #b6ff00;
+        cursor: pointer;
+    }
+.IconesContainerCategoria {
     display: flex;
     justify-content: center;
     align-items: center;
