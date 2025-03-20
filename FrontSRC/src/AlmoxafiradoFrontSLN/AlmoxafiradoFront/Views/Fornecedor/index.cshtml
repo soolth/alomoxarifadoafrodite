@@ -1,52 +1,71 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="Fornecedor.css">
-</head>
-<bodyfor>
-
-
-    <div class="containerfor">
-        <h2>Cadastro de Fornecedor</h2>
-        <form>
-            <div class="form-group">
-                <label for="nomeFornecedor">Nome</label>
-                <input type="text" id="nomeFornecedor" name="nomeFornecedor" required>
-            </div>
-            <div class="form-group">
-                <label for="telefoneFornecedor">Telefone</label>
-                <input type="text" id="telefoneFornecedor" name="telefoneFornecedor" required>
-            </div>
-            <div class="form-group">
-                <label for="estadoFornecedor">Estado</label>
-                <input type="text" id="estadoFornecedor" name="estadoFornecedor" required>
-            </div>
-            <div class="form-group">
-                <label for="cidadeFornecedor">Cidade</label>
-                <input type="text" id="cidadeFornecedor" name="cidadeFornecedor" required>
-            </div>
-            <div class="form-group">
-                <label for="cnpjFornecedor">CNPJ</label>
-                <input type="text" id="cnpjFornecedor" name="cnpjFornecedor" required>
-            </div>
-
-            <div class="button-container">
-                <button type="button" class="btn btn-cancel" onclick="cancelar()">Cancelar</button>
-                <button type="submit" class="btn btn-save">Salvar</button>
-            </div>
-        </form>
+﻿<div id="container" class="containerFor">
+    <div class="container1For">
+        <div>
+            <a class="btnFor" href="/Fornecedor/Create">
+                Novo
+            </a>
+        </div>
     </div>
+    <div class="container2For">
+        <table class="TableContainerFor">
+            <thead class="theadFor">
+            <th>
+                Nome
+            </th>
+            <th>
+                Telefone
+            </th>
+            <th>
+                Estado
+            </th>
+            <th>
+                Cidade
+            </th>
+            <th>
+                CNPJ
+            </th>
+            <th>
+                Opções
+            </th>
+            </thead>
+            <tbody>
 
-    <script>
-        function cancelar() {
-            // Limpa todos os campos do formulário
-            document.querySelector('form').reset();
-        }
-    </script>
+                @foreach (var item in ViewBag.Fornecedor)
+                {
+                    <tr>
+                        <td class="tdFor">@item.nome</td>
+                        <td class="tdFor">@item.telefone</td>
+                        <td class="tdFor">@item.estado</td>
+                        <td class="tdFor">@item.cidade</td>
+                        <td class="tdFor">@item.cnpj</td>
+                        <td class="tdFor">
+                            <div class="IconesContainerFor">
+                                <div class="Icone1For">
+                                    <button class="trash-btn">
+                                        <div class="fas fa-trash"></div>
+                                    </button>
+                                </div>
+                                <div class="Icone2For">
+                                    <button class="edit-button">
+                                        <div class="fas fa-edit"></div>
+                                    </button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                }
+            </tbody>
 
 
-</bodyfor>
-</html>
+        </table>
+    </div>
+    <div class="containerFor">
+        <div>
+            <button class="btnFor BtnAzulColorFor">
+                Voltar
+            </button>
+        </div>
+    </div>
+</div>
+

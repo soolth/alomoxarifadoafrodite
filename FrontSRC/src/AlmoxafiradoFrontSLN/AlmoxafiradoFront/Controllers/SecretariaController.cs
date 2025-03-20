@@ -9,16 +9,16 @@ namespace AlmoxafiradoFront.Controllers
     {
         public IActionResult Index()
         {
-            var url = "https://localhost:44366/listaFornecedor";
-            List<FornecedorDTO> fornecedo = new List<FornecedorDTO>();
+            var url = "https://localhost:44366/listaSecretaria";
+            List<SecretariaDTO> secreta = new List<SecretariaDTO>();
             using HttpClient client = new HttpClient();
             try
             {
                 HttpResponseMessage response = client.GetAsync(url).Result;
                 response.EnsureSuccessStatusCode();
                 string json = response.Content.ReadAsStringAsync().Result;
-                fornecedo = JsonSerializer.Deserialize<List<FornecedorDTO>>(json);
-                ViewBag.Produtos = fornecedo;
+                secreta = JsonSerializer.Deserialize<List<SecretariaDTO>>(json);
+                ViewBag.Secretaria = secreta;
 
 
             }
@@ -28,6 +28,11 @@ namespace AlmoxafiradoFront.Controllers
 
             }
 
+            return View();
+        }
+        [HttpGet]
+        public IActionResult Create()
+        {
             return View();
         }
     }

@@ -1,78 +1,120 @@
-﻿bodyProduto {
-    font-family: Arial, sans-serif;
-    padding: 200px;
+﻿.containerPro {
+    width: 60%;
+    height: 60%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
 }
 
-.form-containerProduto {
-    margin: auto;
+.container1Pro {
+    width: 100%;
+    height: 15%;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
 }
 
-    .form-containerProduto h2Produto {
-        text-align: center;
-        margin-bottom: 20vh;
+.container2Pro {
+    width: 80%;
+    height: 70%;
+    /* background-color: green; */
+}
+
+.container3Pro {
+    width: 100%;
+    height: 15%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnPro {
+    padding: 0.3rem;
+    width: 100px;
+    background-color: aquamarine;
+    border-radius: 5px;
+    border: 0;
+    color: white;
+    font-weight: bolder;
+}
+
+.BtnAzulColorPro {
+    background-color: cyan !important;
+}
+
+.theadPro {
+    background-color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+
+.TableContainerPro {
+    width: 100%;
+    height: 150px;
+    font-size: 15pt !important;
+}
+
+    .TableContainerPro td, th {
+        border: 1px solid black;
+        width: 10px;
     }
 
-    .form-containerProduto labelProduto {
-        font-weight: bold;
-        margin-top: 10px;
+.tdPro {
+    background-color: white;
+    color: black;
+}
+
+.Icone1Pro {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.trash-btn {
+    background-color: #ffff;
+    border-color: white;
+}
+
+    .trash-btn:hover {
+        background-color: #b6ff00;
     }
 
-    .form-containerProduto inputProduto {
-        width: 100%;
-        padding: 10px;
-        margin: 8px 0;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
+fas fa-edit {
+    background-color: black;
+}
 
-    .form-containerProduto .button-containerProduto {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 20px;
-    }
+.Icone2Pro {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
 
-    .form-containerProduto buttonProduto {
-        padding: 10px 15px;
-        border: none;
-        border-radius: 5px;
+.edit-button {
+    background-color: #ffff;
+    border-color: white;
+}
+
+    .edit-button:hover {
+        background-color: #b6ff00;
         cursor: pointer;
     }
 
-    .form-containerProduto .voltarProduto {
-        background-color: #007bff;
-        color: white;
+.IconesContainerPro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 1rem;
+}
+
+@media (max-width: 768px) {
+    .containerPro {
+        width: 82%;
     }
-
-    .form-containerProduto .cancelarProduto {
-        background-color: #dc3545;
-        color: white;
-    }
-
-    .form-containerProduto .salvarProduto {
-        background-color: #007bff;
-        color: white;
-    }
-
-.codigocoProduto:hover {
-    background-color: rgb(122, 207, 122);
-    color: #ffffff;
-}
-
-.unidadeProduto:hover {
-    background-color: rgb(122, 207, 122);
-    color: #ffffff;
-}
-
-.descricaoProduto:hover {
-    background-color: rgb(122, 207, 122);
-    color: #ffffff;
-}
-
-.Epermanete:hover {
-    background-color: rgb(122, 207, 122);
-    color: #ffffff;
-}
-.CodigoCategoria:hover {
-    background-color: rgb(122, 207, 122);
-    color: #ffffff;
 }

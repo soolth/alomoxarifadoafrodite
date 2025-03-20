@@ -102,7 +102,7 @@ INSERT INTO ENTRADA([Descricao], [DATAENTRADA],[QUANTIDADEATUAL])
 		Codigo  int identity(1,1) primary key,
          Descricao VARCHAR(100),
          Quantidadeatual int,
-         QuantidadedeSaida int
+         QuantidadedeSaida int,
 		 )
 		 insert into SAIDA ([Descricao], [Quantidadeatual],[QuantidadedeSaida])
 		 VALUES ('Alimentos', '100','54')

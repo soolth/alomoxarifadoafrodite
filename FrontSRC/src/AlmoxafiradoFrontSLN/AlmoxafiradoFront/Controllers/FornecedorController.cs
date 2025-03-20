@@ -18,7 +18,7 @@ namespace AlmoxafiradoFront.Controllers
                 response.EnsureSuccessStatusCode();
                 string json = response.Content.ReadAsStringAsync().Result;
                 fornecedo = JsonSerializer.Deserialize<List<FornecedorDTO>>(json);
-                ViewBag.Produtos = fornecedo;
+                ViewBag.Fornecedor = fornecedo;
 
 
             }
@@ -28,6 +28,11 @@ namespace AlmoxafiradoFront.Controllers
 
             }
 
+            return View();
+        }
+        [HttpGet]
+        public IActionResult Create()
+        {
             return View();
         }
     }
