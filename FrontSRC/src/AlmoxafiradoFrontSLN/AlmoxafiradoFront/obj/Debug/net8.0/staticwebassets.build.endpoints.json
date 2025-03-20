@@ -249,6 +249,88 @@
       ]
     },
     {
+      "Route": "css/Fornecedorcreate.css",
+      "AssetFile": "css/Fornecedorcreate.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1449"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"E6XexoI3xLN7tecvb5nA3ESYP19rsGYbNItXrlPFQ9E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Mar 2025 12:33:52 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-E6XexoI3xLN7tecvb5nA3ESYP19rsGYbNItXrlPFQ9E="
+        }
+      ]
+    },
+    {
+      "Route": "css/Fornecedorcreate.fps3hws49v.css",
+      "AssetFile": "css/Fornecedorcreate.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1449"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"E6XexoI3xLN7tecvb5nA3ESYP19rsGYbNItXrlPFQ9E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Mar 2025 12:33:52 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fps3hws49v"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-E6XexoI3xLN7tecvb5nA3ESYP19rsGYbNItXrlPFQ9E="
+        },
+        {
+          "Name": "label",
+          "Value": "css/Fornecedorcreate.css"
+        }
+      ]
+    },
+    {
       "Route": "css/Produto.css",
       "AssetFile": "css/Produto.css",
       "Selectors": [],

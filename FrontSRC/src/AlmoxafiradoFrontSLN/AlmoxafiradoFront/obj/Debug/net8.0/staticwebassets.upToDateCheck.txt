@@ -2,6 +2,7 @@ wwwroot\css\categoria.css
 wwwroot\css\categoriacreate.css
 wwwroot\css\Entrada.css
 wwwroot\css\Fornecedor.css
+wwwroot\css\Fornecedorcreate.css
 wwwroot\css\Produto.css
 wwwroot\css\Produtocreate.css
 wwwroot\css\Saida.css

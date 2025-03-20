@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CbqxG0VEUjvIhzfThmS6tineQJDSdQcbPgGaEH+NRS0=",
+  "Hash": "3WvlACgROqSsdchp/vFuRl134zIGAh2hOKzqucABYt4=",
   "Source": "AlmoxafiradoFront",
   "BasePath": "_content/AlmoxafiradoFront",
   "Mode": "Default",
@@ -141,6 +141,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\Fornecedor.css"
+    },
+    {
+      "Identity": "C:\\Users\\Tarde.Cetafest\\davigit\\DaviGuim\\alomoxarifadoafrodite\\FrontSRC\\src\\AlmoxafiradoFrontSLN\\AlmoxafiradoFront\\wwwroot\\css\\Fornecedorcreate.css",
+      "SourceId": "AlmoxafiradoFront",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Tarde.Cetafest\\davigit\\DaviGuim\\alomoxarifadoafrodite\\FrontSRC\\src\\AlmoxafiradoFrontSLN\\AlmoxafiradoFront\\wwwroot\\",
+      "BasePath": "_content/AlmoxafiradoFront",
+      "RelativePath": "css/Fornecedorcreate#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fps3hws49v",
+      "Integrity": "E6XexoI3xLN7tecvb5nA3ESYP19rsGYbNItXrlPFQ9E=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Fornecedorcreate.css"
     },
     {
       "Identity": "C:\\Users\\Tarde.Cetafest\\davigit\\DaviGuim\\alomoxarifadoafrodite\\FrontSRC\\src\\AlmoxafiradoFrontSLN\\AlmoxafiradoFront\\wwwroot\\css\\Produto.css",
@@ -1977,6 +1998,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-dlf9sZcVFOThMgVCgyUxUoVRfHwWb/wbWcLgUQZviVw="
+        }
+      ]
+    },
+    {
+      "Route": "css/Fornecedorcreate.css",
+      "AssetFile": "C:\\Users\\Tarde.Cetafest\\davigit\\DaviGuim\\alomoxarifadoafrodite\\FrontSRC\\src\\AlmoxafiradoFrontSLN\\AlmoxafiradoFront\\wwwroot\\css\\Fornecedorcreate.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1449"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"E6XexoI3xLN7tecvb5nA3ESYP19rsGYbNItXrlPFQ9E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Mar 2025 12:33:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-E6XexoI3xLN7tecvb5nA3ESYP19rsGYbNItXrlPFQ9E="
+        }
+      ]
+    },
+    {
+      "Route": "css/Fornecedorcreate.fps3hws49v.css",
+      "AssetFile": "C:\\Users\\Tarde.Cetafest\\davigit\\DaviGuim\\alomoxarifadoafrodite\\FrontSRC\\src\\AlmoxafiradoFrontSLN\\AlmoxafiradoFront\\wwwroot\\css\\Fornecedorcreate.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1449"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"E6XexoI3xLN7tecvb5nA3ESYP19rsGYbNItXrlPFQ9E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 20 Mar 2025 12:33:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fps3hws49v"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Fornecedorcreate.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-E6XexoI3xLN7tecvb5nA3ESYP19rsGYbNItXrlPFQ9E="
         }
       ]
     },
